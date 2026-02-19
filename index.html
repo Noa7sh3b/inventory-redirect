@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Redirecting...</title>
+
+    <!-- Fallback لو الجافاسكريبت متعطل -->
+    <meta http-equiv="refresh" content="0; url=https://inventory-app-management.streamlit.app/">
+
+    <script>
+        // كسر الـ iframe لو الصفحة اتفتحت جواه
+        if (window.top !== window.self) {
+            window.top.location.href = "https://inventory-app-management.streamlit.app/";
+        } else {
+            window.location.href = "https://inventory-app-management.streamlit.app/";
+        }
+    </script>
+</head>
+<body>
+    <p>Redirecting to the application...</p>
+</body>
+</html>
